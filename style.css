@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --clr1: hsl(215, 51%, 70%);
+  --clr2: #00fff8;
+  --clr3: hsl(217, 54%, 11%); /*(main BG)*/
+  --clr4: hsl(216, 50%, 16%); /*(card BG)*/
+  --clr5: hsl(215, 32%, 27%); /*(line)*/
+  --clr6: #fff;
+}
+@import url("https://fonts.google.com/specimen/Outfit:300, 400, 600");
+
+/* Responsividade Desktop */
+@media only screen and (min-width: 768px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    background: var(--clr3);
+  }
+  main {
+    width: 500px;
+    height: 80%;
+    margin: 5em auto;
+    border-radius: 20px;
+    text-align: center;
+    background: var(--clr4);
+  }
+  section[id~="img"] {
+    max-width: 85%;
+    height: 50%;
+    margin: 3em auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  img {
+    min-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  section[id~="infor"] {
+    max-width: 85%;
+    height: 40%;
+    margin: -15px auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  h1 {
+    width: 100%;
+    height: 12%;
+    color: var(--clr6);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: start;
+  }
+  h1 + div {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    color: var(--clr1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: start;
+    line-height: 35px;
+    margin-top: -35px;
+  }
+  .elements {
+    width: 100%;
+    height: 17%;
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+  }
+  #iconeeth {
+    width: 2em;
+    height: 50%;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 3px;
+    display: flex;
+    align-items: center;
+  }
+  .etherium {
+    width: 7em;
+    height: 50px;
+    color: var(--clr2);
+    display: flex;
+    align-items: center;
+    margin-left: -1px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .icontime {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: 2em;
+  }
+  .clock {
+    width: 15px;
+    height: 49px;
+    padding-top: 15px;
+  }
+  .days {
+    width: 90px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 20px;
+    color: var(--clr1);
+  }
+  .border {
+    width: 98%;
+    margin: -15px auto;
+    border-top: solid 0.2px var(--clr1);
+  }
+  .creator {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: end;
+    margin-top: -60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+  #imgcreator {
+    min-width: 2%;
+    height: 5%;
+    object-fit: cover;
+    border: solid 1px var(--clr6);
+    border-radius: 50%;
+    position: absolute;
+    margin-right: 23.6em;
+
+  }
+  .pharag {
+    width: 85%;
+    height: 50%;
+    margin-top: 25px;
+    display: flex;
+    align-items: flex-end;
+    color: var(--clr1);
+   
+  }
+  .p1 {
+    width: 100px;
+    height: 25px;
+    margin-left: 0px;
+    color: var(--clr1);
+  }
+  .p2 {
+    width: 50%;
+    height: 25px;
+    color: var(--clr6);
+    display: flex;
+    
+  }
+  .footer{
+    color: var(--clr1);
+  }
+}
+
+/* Responsividade Mobile First completada */
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    background: var(--clr3);
+  }
+  /* branco */
+  main {
+    width: 70%;
+    height: 80%;
+    margin: 4em auto;
+    border-radius: 20px;
+    text-align: center;
+    background: var(--clr4);
+  }
+  /* verde */
+  section[id~="img"] {
+    max-width: 85%;
+    height: 50%;
+    margin: 3em auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  section > img {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  /* azul */
+  section[id~="infor"] {
+    max-width: 80%;
+    height: 40%;
+    margin: -25px auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  h1 {
+    width: 100%;
+    height: 12%;
+    color: var(--clr6);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: start;
+    margin-top: 18px;
+  }
+  h1 + div {
+    width: 100%;
+    height: 2%;
+    display: flex;
+    color: var(--clr1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: start;
+    line-height: 25px;
+    margin-top: 1em;
+  }
+  .elements {
+    min-width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    margin-top: 5em;
+  }
+  #iconeeth {
+    min-width: 20px;
+    height: 50%;
+    font-size: 20px;
+    margin-left: 2px;
+    padding-left: 3px;
+    padding-top: -2px;
+  }
+  .etherium {
+    max-width: 30px;
+    height: 50px;
+    color: var(--clr2);
+    display: flex;
+    align-items: center;
+    margin-left: -1px;
+    font-size: 0.9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .icontime {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    margin-left: 2em;
+  }
+  .clock {
+    width: 15px;
+    height: 49px;
+    padding-top: 15px;
+    margin-right: 0.2em;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .days {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 5px;
+    font-size: 0.9em;
+    color: var(--clr1);
+  }
+  .border {
+    width: 98%;
+    height: 2px;
+    margin: 20px auto;
+    border-top: solid 0.2px var(--clr1);
+  }
+  .creator {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    margin-top: -1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  div > img {
+    max-width: 20%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 2px;
+    border-radius: 50%;
+    border: solid 1px var(--clr6);
+  }
+  .pharag {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: flex-end;
+    color: var(--clr1);
+  }
+  .p1 {
+    height: 88%;
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+    font-size: 0.8em;
+    color: var(--clr1);
+  }
+  .p2 {
+    width: 50%;
+    height: 88%;
+    display: flex;
+    align-items: flex-end;
+    color: var(--clr6);
+    margin-bottom: 0.7em;
+    margin-left: .80em;
+    font-size: 0.78em;
+  }
+  .footer {
+    max-width: 100%;
+    height: 3rem;
+    position: relative;
+    top: 40px;
+    word-wrap: break-word;
+    font-size: 0.85em;
+    color: var(--clr1);
+  }
+}
